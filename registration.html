@@ -1,59 +1,165 @@
-h1 {
-        text-align: center;
-        color: #17365d;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store - Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    form {
-        width: 600px;
-        margin: 30px auto;
-        background-color: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #aaa;
-    }
+        body {
+            background-color: #f4f6fb;
+            color: #333;
+        }
 
-    .field {
-        margin-bottom: 18px;
-    }
+        /* Header Styling */
+        header {
+            background-color: #1b365d;
+            color: white;
+            text-align: center;
+            padding: 25px 0 15px 0;
+        }
 
-    label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 6px;
-    }
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
 
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    select,
-    textarea {
-        width: 100%;
-        padding: 9px;
-        box-sizing: border-box;
-    }
+        /* Navigation Menu */
+        nav {
+            background-color: #1b365d;
+            border-top: 1px solid #2a4d85;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-    textarea {
-        height: 100px;
-        resize: vertical;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
 
-    .radio,
-    .checkbox {
-        margin-right: 15px;
-    }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-    .buttons {
-        text-align: center;
-    }
+        /* Main Container & Form Layout */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
 
-    input[type="submit"],
-    input[type="reset"] {
-        padding: 10px 20px;
-        margin: 5px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+        .form-card {
+            background-color: white;
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-card h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #222;
+        }
+
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #555;
+            background-color: #fff;
+        }
+
+        .form-group input::placeholder {
+            color: #aaa;
+        }
+
+        /* Buttons Styling */
+        .btn-register {
+            width: 100%;
+            padding: 11px;
+            background-color: #1b365d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+
+        .btn-register:hover {
+            background-color: #152b4b;
+        }
+
+        .btn-clear {
+            width: 100%;
+            padding: 11px;
+            background-color: #eaeaea;
+            color: #333;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-clear:hover {
+            background-color: #dfdfdf;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #1b365d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 13px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Adjust body wrapper to keep footer pinned or flowing */
+        html, body {
+            height: 100%;
+            position: relative;
+        }
+
+        .page-wrap {
+            min-height: 100%;
+            padding-bottom: 70px; /* Space for footer */
+        }
+    </style>
+</head>
+<body>
 </style>
 �
 
