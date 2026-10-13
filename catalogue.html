@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Catalogue</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Book Catalogue</h1>
+    <p>Browse our collection</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="cart.html">Cart</a>
+</nav>
+
+<main>
+
+    <div class="container">
+
+        <h2>Available Books</h2>
+
+        <table>
+
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Let Us C</td>
+                <td>Yashavant Kanetkar</td>
+                <td>Programming</td>
+                <td>₹450</td>
+                <td>
+                    <button
+                        class="add-to-cart"
+                        data-book="Let Us C">
+                        Add to Cart
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Computer Networks</td>
+                <td>Andrew S. Tanenbaum</td>
+                <td>Computer Science</td>
+                <td>₹600</td>
+                <td>
+                    <button
+                        class="add-to-cart"
+                        data-book="Computer Networks">
+                        Add to Cart
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Operating System Concepts</td>
+                <td>Abraham Silberschatz</td>
+                <td>Operating Systems</td>
+                <td>₹700</td>
+                <td>
+                    <button
+                        class="add-to-cart"
+                        data-book="Operating System Concepts">
+                        Add to Cart
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Data Structures</td>
+                <td>Seymour Lipschutz</td>
+                <td>Programming</td>
+                <td>₹500</td>
+                <td>
+                    <button
+                        class="add-to-cart"
+                        data-book="Data Structures">
+                        Add to Cart
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© <span class="current-year"></span> Online Book Store</p>
+</footer>
+
+</body>
+</html>
