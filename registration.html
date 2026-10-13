@@ -1,174 +1,102 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f7;
-        }
+    <title>Registration - Online Book Store</title>
 
-        h1 {
-            text-align: center;
-            color: #17365d;
-        }
-
-        form {
-            width: 600px;
-            margin: 30px auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #aaa;
-        }
-
-        .field {
-            margin-bottom: 18px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 6px;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        input[type="email"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 9px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            height: 100px;
-            resize: vertical;
-        }
-
-        .radio,
-        .checkbox {
-            margin-right: 15px;
-        }
-
-        .buttons {
-            text-align: center;
-        }
-
-        input[type="submit"],
-        input[type="reset"] {
-            padding: 10px 25px;
-            margin: 5px;
-            border: none;
-            background-color: #17365d;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
 
-    <h1>Online Bookstore Registration</h1>
+<header>
+    <h1>Online Book Store</h1>
+</header>
 
-    <form>
+<nav>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="cart.html">Cart</a>
+</nav>
 
-        <!-- Name -->
-        <div class="field">
-            <label>Name</label>
-            <input type="text" name="name" placeholder="Enter your name">
-        </div>
+<main>
 
-        <!-- Password -->
-        <div class="field">
-            <label>Password</label>
-            <input type="password" name="password" placeholder="Enter password">
-        </div>
+    <form id="registrationForm">
 
-        <!-- Email -->
-        <div class="field">
-            <label>E-mail</label>
-            <input type="email" name="email" placeholder="example@gmail.com">
-        </div>
+        <h2>Create Account</h2>
 
-        <!-- Phone Number -->
-        <div class="field">
-            <label>Phone Number</label>
-            <input type="text" name="phone" placeholder="Enter phone number">
-        </div>
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+        >
 
-        <!-- Sex -->
-        <div class="field">
-            <label>Sex</label>
-            <input type="radio" name="sex" value="Male" class="radio"> Male
-            <input type="radio" name="sex" value="Female" class="radio"> Female
-            <input type="radio" name="sex" value="Other" class="radio"> Other
-        </div>
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
 
-        <!-- Date of Birth -->
-        <div class="field">
-            <label>Date of Birth</label>
-            <select name="day">
-                <option value="">Day</option>
-                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-                <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
-                <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
-                <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
-                <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
-                <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
-                <option>31</option>
-            </select>
+        <label for="username">Username</label>
+        <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Choose a username"
+            required
+        >
 
-            <select name="month
-<option value="">Month</option>
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>October</option>
-                <option>November</option>
-                <option>December</option>
-            </select>
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required
+        >
 
-            <select name="year">
-                <option value="">Year</option>
-                <option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option>
-                <option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option>
-                <option>2010</option>
-            </select>
-        </div>
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm password"
+            required
+        >
 
-        <!-- Languages -->
-        <div class="field">
-            <label>Languages Known</label>
-            <input type="checkbox" name="language" value="English" class="checkbox"> English
-            <input type="checkbox" name="language" value="Telugu" class="checkbox"> Telugu
-            <input type="checkbox" name="language" value="Hindi" class="checkbox"> Hindi
-            <input type="checkbox" name="language" value="Tamil" class="checkbox"> Tamil
-        </div>
+        <label for="gender">Gender</label>
 
-        <!-- Address -->
-        <div class="field">
-            <label>Address</label>
-            <textarea name="address" placeholder="Enter your address"></textarea>
-        </div>
+        <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
 
-        <!-- Buttons -->
-        <div class="buttons">
-            <input type="submit" value="Register">
-            <input type="reset" value="Reset">
-        </div>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
 
     </form>
 
-</body>
+</main>
 
+<footer>
+    <p>© <span class="current-year"></span> Online Book Store</p>
+</footer>
+
+</body>
 </html>
+
